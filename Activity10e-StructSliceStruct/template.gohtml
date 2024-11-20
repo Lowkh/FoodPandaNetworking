@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Star Wars</title>
+</head>
+<body>
+
+<ul>
+    <h2>Students</h2> 
+    {{range .StudentNames}}
+    <li>{{.FirstName}} - {{.LastName}}</li>
+    {{end}}
+</ul>
+
+<ul>
+    <h2>Courses</h2>
+    {{range .CourseNames}}
+    <li>{{.CourseName}} - {{.MaxCount}} </li>
+    {{end}}
+</ul>
+
+</body>
+</html>

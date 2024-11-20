@@ -1,0 +1,5 @@
+<Settings>
+    <URL>https://api.data.gov.sg/v1/environment/24-hour-weather-forecast</URL>
+    <Port>8080</Port>
+    <IP>127.0.0.1</IP>
+</Settings>

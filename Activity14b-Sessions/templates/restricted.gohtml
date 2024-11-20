@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Session Details</title>
+</head>
+<body>
+
+<h1>The following are details for current session.</h1>
+
+{{if .First}}
+    Username is {{.UserName}}<br>
+    First name is {{.First}}<br>
+    Last name is {{.Last}}<br>
+    Current Session ID is {{.UserID}}<br>
+{{end}}
+
+</body>
+</html>

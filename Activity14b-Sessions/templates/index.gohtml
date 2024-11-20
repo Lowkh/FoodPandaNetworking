@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Session Demonstration</title>
+</head>
+<body>
+
+<h2>Submit the information below to begin</h2>
+<form method="post">
+    <input type="text" name="username" placeholder="user name"><br>
+    <input type="text" name="firstname" placeholder="first name"><br>
+    <input type="text" name="lastname" placeholder="last name"><br>
+    <input type="submit">
+</form>
+
+{{if .First}}
+<h2>The following information is available and access is granted.</h2>
+Username is {{.UserName}}<br>
+First name is {{.First}}<br>
+Last name is {{.Last}}<br>
+
+{{else}}
+
+<h2>This is to demonstrate if there is no session id and username, access is not given.</h2>
+{{end}}
+<h2>Go to <a href="/restricted">Restricted Area</a></h2>
+</body>
+</html>
